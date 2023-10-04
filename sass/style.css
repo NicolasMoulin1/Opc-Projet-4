@@ -166,7 +166,7 @@ header .header__location-container {
   border-radius: 0px 0px 25px 25px;
   background-color: white;
   gap: 5px;
-  padding: 15px 0px 15px 15px;
+  padding: 15px 0px 15px 0px;
 }
 .restaurants__container .card .card-content .restaurant__card__content__heart {
   position: absolute;
@@ -175,10 +175,12 @@ header .header__location-container {
 .restaurants__container .card .card-content h2 {
   font-size: 18px;
   font-weight: 700;
+  padding-left: 15px;
 }
 .restaurants__container .card .card-content p {
   font-size: 17px;
   font-weight: 300;
+  padding-left: 15px;
 }
 
 footer {
