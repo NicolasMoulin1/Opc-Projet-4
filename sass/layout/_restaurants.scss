@@ -1,0 +1,54 @@
+
+//****Restaurants****//
+
+.restaurants__container{
+    padding: 15px;
+    background-color: #f6f6f6;
+    margin-top: 60px;
+    padding-bottom: 60px;
+    h3{
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+.restaurants__card {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        display: flex;
+        width: 100%;
+        border-radius: 25px 25px 0px 0px;
+        height: 220px;
+    }
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 0px 0px 25px 25px;
+        background-color: white;
+        gap: 5px;
+        padding: 15px 0px 15px 15px;
+        .restaurant__card__content__heart {
+            position: absolute;
+            right: 10%;
+        }
+            h2 {
+            font-size: 18px;
+            font-weight: 700;
+        }
+        p {
+            font-size: 17px;
+            font-weight: 300;
+            }
+        }
+    }
+}

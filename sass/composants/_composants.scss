@@ -1,0 +1,37 @@
+
+//****Composants****//
+
+.restaurants__card__nouveau {
+    right: 5%;
+    @include flex-center;
+    background-color: #99e2d0;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    position: absolute;
+    right: 10%;
+    top: 95%;
+    p {
+        color: #008766;
+        font-weight: 600;
+    }
+}
+
+        .button-CTA{
+            @include flex-center;
+            height: 50px;
+             width: 60%;
+            border-radius: 25px;
+            background:  var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+            border: none;
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+            color: white;                
+            font-size: 16px;
+            font-weight: 700;
+            
+            &:hover {
+                cursor: pointer;
+                border-radius: 25px;
+                background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+    }
+}

@@ -1,0 +1,28 @@
+
+//****Reservation****//
+
+.reservation {
+    @include flex-center;
+    flex-direction:column;
+    gap: 30px;
+    background-color: #F6F6F6;
+    padding-bottom: 50px;
+    .reservation__info-text {
+        @include flex-center;
+        flex-direction: column;
+        padding-top: 35px;
+        gap: 15px;
+            h1 {
+                font-size: 24px;
+                text-align: center;
+                padding: 0px 42px 0px 42px;
+                font-weight: 700;
+            }
+                p {
+                    font-size: 18px;
+                    text-align: center;
+                    font-weight: 300;
+                    margin: 0px 30px;
+        }
+    }
+}
