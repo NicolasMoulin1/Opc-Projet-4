@@ -162,12 +162,12 @@ header .header__location-container {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  position: relative;
 }
 .restaurants__container .card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .restaurants__container .card img {
   display: flex;
