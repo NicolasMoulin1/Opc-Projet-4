@@ -5,7 +5,7 @@
     @include flex-center;
     flex-direction:column;
     gap: 30px;
-    background-color: #F6F6F6;
+    background-color: $background-primary;
     padding-bottom: 50px;
     .reservation__info-text {
         @include flex-center;

@@ -25,11 +25,12 @@
             margin-right: auto;
         }
             .article__fonctionnement {
+                @include box-shadow;
                 display: flex;
                 font-size: 16px;
                 height: 72px;
                 border-radius: 20px;
-                box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+                
                 align-items: center;
                 width: 80%;
                 padding-left: 30px;

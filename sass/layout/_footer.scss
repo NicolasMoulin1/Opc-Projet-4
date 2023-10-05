@@ -4,7 +4,7 @@
 footer {
     display: flex;
     flex-direction: column;
-    background-color: var(--grey, #353535);
+    background-color: $background-footer;
     color: white;
     padding: 22px 25px;
     gap: 7px;

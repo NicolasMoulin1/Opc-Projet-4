@@ -6,9 +6,9 @@ header {
     flex-direction: column;
     align-items: center;
         .header__img-container{
+            @include flex-center;
             text-align: center;
             height: 63px;
-            @include flex-center;
 
             img {
                 width: 50%;
@@ -16,10 +16,10 @@ header {
     }
         .header__location-container {
             @include flex-center;
+            @include header_box-shadow;
             gap: 17px;
-            background-color: $light-grey;
+            background-color: $background-header;
             width: 100%;
             height: 50px;
-            box-shadow: inset 0px 2px 4px 0px #99e2d0;   
     }
 }
