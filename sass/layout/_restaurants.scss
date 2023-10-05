@@ -39,8 +39,24 @@
         gap: 5px;
         padding: 15px 0px 15px 0px;
         .restaurant__card__content__heart {
-            position: absolute;
-            right: 10%;
+            position: relative;
+            i {
+                position: absolute;
+                right: 20px;
+                top: -50px;
+                font-size: 25px;
+            }
+            .fa-solid {
+                opacity: 0;
+                &:hover {
+                    opacity: 1;
+                    color: transparent;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    transition: all 0.5s ease-in-out;
+                    background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);;
+                }
+            }
         }
             h2 {
             font-size: 18px;
