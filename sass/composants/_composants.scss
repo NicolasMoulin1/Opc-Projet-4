@@ -2,15 +2,14 @@
 //****Composants****//
 
 .restaurants__card__nouveau {
-    right: 5%;
     @include flex-center;
     background-color: #99e2d0;
     width: 80px;
     height: 30px;
     border-radius: 5px;
     position: absolute;
-    right: 10%;
-    top: 95%;
+    right: 15px;
+    top: 15px;
     p {
         color: #008766;
         font-weight: 600;
