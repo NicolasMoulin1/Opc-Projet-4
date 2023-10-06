@@ -4,8 +4,7 @@
 }
 
 .card img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 a {
@@ -54,6 +53,12 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+header .fa-arrow-left {
+  position: absolute;
+  top: 40%;
+  left: 5%;
 }
 header .header__img-container {
   display: flex;
@@ -240,4 +245,92 @@ footer .article-footer .fa-handshake-angle {
 footer .article-footer .fa-utensils {
   display: flex;
   padding-right: 11px;
+}
+
+.acceuil-image-restaurant {
+  width: 100%;
+  height: 190px;
+}
+.acceuil-image-restaurant img {
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  object-fit: cover;
+}
+
+/*h1 + coeur*/
+.acceuil-restaurant-titre {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 25px 25px 0px 0px;
+  top: 0%;
+  right: 0%;
+}
+.acceuil-restaurant-titre h1 {
+  font-size: 28px;
+  font-weight: 400;
+  padding-left: 15px;
+  padding-top: 20px;
+  font-family: shrikhand;
+}
+.acceuil-restaurant-titre i {
+  position: absolute;
+  top: 37%;
+  right: 10%;
+  font-size: 24px;
+}
+.acceuil-restaurant-titre .fa-solid {
+  opacity: 0;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+}
+.acceuil-restaurant-titre .fa-solid:hover {
+  opacity: 1;
+}
+
+.card-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  padding: 15px;
+  gap: 10px;
+}
+.card-menu h3 {
+  font-weight: 300;
+}
+.card-menu .card-menu__container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #f6f6f6;
+}
+.card-menu .card-menu__container .card-menu__container__carte {
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+}
+.card-menu .card-menu__container .card-menu__container__carte .card-menu__container__carte-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.card-menu .card-menu__container .card-menu__container__carte .card-menu__container__carte-text h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.card-menu .card-menu__container .card-menu__container__carte .card-menu__container__carte-text p {
+  font-size: 15px;
+  font-weight: 300;
+}
+.card-menu .card-menu__container .card-menu__container__carte .card-menu__container__carte-text .card-menu__container__carte-prix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
 }/*# sourceMappingURL=style.css.map */

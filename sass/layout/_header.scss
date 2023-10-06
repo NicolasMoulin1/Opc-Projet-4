@@ -5,15 +5,20 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    .fa-arrow-left {
+        position: absolute;
+        top: 40%;
+        left: 5%;
+    }
         .header__img-container{
             @include flex-center;
             text-align: center;
             height: 63px;
-
             img {
                 width: 50%;
             }       
-    }
+        }
         .header__location-container {
             @include flex-center;
             @include header_box-shadow;
