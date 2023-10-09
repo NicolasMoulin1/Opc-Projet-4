@@ -151,36 +151,34 @@ header .header__location-container {
   color: #9356DC;
 }
 
-.restaurants__container {
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
   padding: 15px;
   background-color: #f6f6f6;
   margin-top: 60px;
   padding-bottom: 60px;
 }
-.restaurants__container h3 {
+.restaurants h3 {
   font-size: 24px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 30px;
 }
-.restaurants__container .restaurants__card {
+
+.restaurant__card {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-}
-.restaurants__container .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   position: relative;
 }
-.restaurants__container .card img {
+.restaurant__card img {
   display: flex;
   width: 100%;
   border-radius: 25px 25px 0px 0px;
   height: 220px;
 }
-.restaurants__container .card .card-content {
+.restaurant__card .card-content {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -189,19 +187,19 @@ header .header__location-container {
   gap: 5px;
   padding: 15px 0px 15px 0px;
 }
-.restaurants__container .card .card-content .restaurant__card__content__heart {
+.restaurant__card .card-content .restaurant__card__content__heart {
   position: relative;
 }
-.restaurants__container .card .card-content .restaurant__card__content__heart i {
+.restaurant__card .card-content .restaurant__card__content__heart i {
   position: absolute;
   right: 20px;
   top: -50px;
   font-size: 25px;
 }
-.restaurants__container .card .card-content .restaurant__card__content__heart .fa-solid {
+.restaurant__card .card-content .restaurant__card__content__heart .fa-solid {
   opacity: 0;
 }
-.restaurants__container .card .card-content .restaurant__card__content__heart .fa-solid:hover {
+.restaurant__card .card-content .restaurant__card__content__heart .fa-solid:hover {
   opacity: 1;
   color: transparent;
   background-clip: text;
@@ -209,12 +207,12 @@ header .header__location-container {
   transition: all 0.5s ease-in-out;
   background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
 }
-.restaurants__container .card .card-content h2 {
+.restaurant__card .card-content h2 {
   font-size: 18px;
   font-weight: 700;
   padding-left: 15px;
 }
-.restaurants__container .card .card-content p {
+.restaurant__card .card-content p {
   font-size: 17px;
   font-weight: 300;
   padding-left: 15px;
@@ -262,9 +260,6 @@ footer .article-footer .fa-utensils {
 .acceuil-restaurant-titre {
   position: relative;
   display: flex;
-  align-items: center;
-  background-color: #f6f6f6;
-  border-radius: 25px 25px 0px 0px;
   top: 0%;
   right: 0%;
 }
@@ -277,8 +272,8 @@ footer .article-footer .fa-utensils {
 }
 .acceuil-restaurant-titre i {
   position: absolute;
-  top: 37%;
-  right: 10%;
+  top: 27px;
+  right: 25px;
   font-size: 24px;
 }
 .acceuil-restaurant-titre .fa-solid {
@@ -291,6 +286,14 @@ footer .article-footer .fa-utensils {
 }
 .acceuil-restaurant-titre .fa-solid:hover {
   opacity: 1;
+}
+
+.container-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  border-radius: 25px 25px 0px 0px;
+  width: 100%;
 }
 
 .card-menu {
@@ -315,6 +318,15 @@ footer .article-footer .fa-utensils {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   padding: 15px;
 }
+.card-menu .card-menu__container .card-menu__container__carte .card-menu__container__carte-prix {
+  position: relative;
+}
+.card-menu .card-menu__container .card-menu__container__carte .card-menu__container__carte-prix p {
+  position: absolute;
+  right: 5px;
+  top: -15px;
+  font-weight: 700;
+}
 .card-menu .card-menu__container .card-menu__container__carte .card-menu__container__carte-text {
   display: flex;
   flex-direction: column;
@@ -322,15 +334,17 @@ footer .article-footer .fa-utensils {
 }
 .card-menu .card-menu__container .card-menu__container__carte .card-menu__container__carte-text h2 {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .card-menu .card-menu__container .card-menu__container__carte .card-menu__container__carte-text p {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 300;
 }
-.card-menu .card-menu__container .card-menu__container__carte .card-menu__container__carte-text .card-menu__container__carte-prix {
+
+.button-container {
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-size: 50px;
+  justify-content: center;
+  width: 100%;
+  padding: 40px 0px 55px;
 }/*# sourceMappingURL=style.css.map */
