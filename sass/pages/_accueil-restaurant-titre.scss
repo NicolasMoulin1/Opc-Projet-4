@@ -70,6 +70,11 @@
     h3 {
         font-weight: 300;
     }
+    .ligne{
+        color: $card-nouveau;
+        border-bottom: 3px solid;
+        width: 12%;
+    }
 
     .card-menu__container {
         display: flex;

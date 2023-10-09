@@ -137,15 +137,16 @@ header .header__location-container {
 }
 .fonctionnement__container .article__fonctionnement {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  background: #f6f6f6;
   display: flex;
+  align-items: center;
+  position: relative;
   font-size: 16px;
+  width: 80%;
   height: 72px;
   border-radius: 20px;
-  align-items: center;
-  width: 80%;
   padding-left: 30px;
   gap: 20px;
-  position: relative;
 }
 .fonctionnement__container .article__fonctionnement i {
   color: #9356DC;
@@ -305,6 +306,11 @@ footer .article-footer .fa-utensils {
 }
 .card-menu h3 {
   font-weight: 300;
+}
+.card-menu .ligne {
+  color: #99E2D0;
+  border-bottom: 3px solid;
+  width: 12%;
 }
 .card-menu .card-menu__container {
   display: flex;
