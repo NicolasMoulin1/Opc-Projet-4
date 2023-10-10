@@ -35,7 +35,7 @@ a {
   justify-content: center;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
   height: 50px;
-  width: 60%;
+  width: 50%;
   border-radius: 25px;
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   border: none;
@@ -194,7 +194,7 @@ header .header__location-container {
 .restaurant__card .card-content .restaurant__card__content__heart i {
   position: absolute;
   right: 20px;
-  top: -50px;
+  top: -40px;
   font-size: 25px;
 }
 .restaurant__card .card-content .restaurant__card__content__heart .fa-solid {
@@ -314,37 +314,88 @@ footer .article-footer .fa-utensils {
 }
 .card-menu .card-menu__container {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  gap: 15px;
   background: #f6f6f6;
+  gap: 15px;
 }
 .card-menu .card-menu__container .card-menu__container__carte {
-  background: white;
-  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  padding: 15px;
+  background: white;
+  border-radius: 15px;
+  height: 60px;
+  width: 100%;
+  overflow: hidden;
 }
-.card-menu .card-menu__container .card-menu__container__carte .card-menu__container__carte-prix {
-  position: relative;
+.card-menu .card-menu__container .card-menu__container__carte:hover .card-menu__container__carte-prix h2 {
+  overflow: hidden;
 }
-.card-menu .card-menu__container .card-menu__container__carte .card-menu__container__carte-prix p {
-  position: absolute;
-  right: 5px;
-  top: -15px;
-  font-weight: 700;
+.card-menu .card-menu__container .card-menu__container__carte:hover .card-menu__container__carte-prix p {
+  overflow: hidden;
 }
-.card-menu .card-menu__container .card-menu__container__carte .card-menu__container__carte-text {
+.card-menu .card-menu__container .card-menu__container__carte:hover .card-menu__container__carte-prix {
+  transform: translate(0px);
+}
+.card-menu .card-menu__container .card-menu__container__carte:hover .card-menu__container__carte-prix .fa-circle-check {
+  color: white;
+  transform: rotate(2turn);
+}
+.card-menu .card-menu__container .card-menu__container__carte:hover .card-menu__container__carte-prix span {
+  background-color: #99e2d0;
+}
+.card-menu .card-menu__container .card-menu__container__carte-text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin-right: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 100%;
+  padding: 0 0 0 15px;
   gap: 5px;
 }
-.card-menu .card-menu__container .card-menu__container__carte .card-menu__container__carte-text h2 {
-  font-size: 18px;
-  font-weight: 600;
+.card-menu .card-menu__container .card-menu__container__carte-text h2 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 700;
 }
-.card-menu .card-menu__container .card-menu__container__carte .card-menu__container__carte-text p {
-  font-size: 13px;
+.card-menu .card-menu__container .card-menu__container__carte-text p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 15px;
   font-weight: 300;
+}
+.card-menu .card-menu__container__carte-prix {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-weight: 700;
+  transform: translateX(45px);
+  transition: all 0.4s;
+}
+.card-menu .card-menu__container__carte-prix p {
+  padding-top: 25px;
+  margin-right: 10px;
+}
+.card-menu .card-menu__container__carte-prix span {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 60px;
+}
+.card-menu .card-menu__container__carte-prix span .fa-circle-check {
+  color: transparent;
+  transition: all 0.5s;
 }
 
 .button-container {

@@ -59,7 +59,7 @@
     width: 100%;
 }
 
-//****A****//
+//****Menu et titre + ligne****//
 .card-menu {
     display: flex;
     flex-direction: column;
@@ -75,44 +75,87 @@
         border-bottom: 3px solid;
         width: 12%;
     }
+//****Partie menu & animation prix****//
 
     .card-menu__container {
-        display: flex;
+        @include flex-center;
         flex-direction: column;
-        gap: 15px;
         background: $background-primary;
-
+        gap: 15px;
         .card-menu__container__carte {
-            background: white;
-            border-radius: 25px;
+            @include flex-center;
             @include box-shadow;
-            padding: 15px;
-
-            .card-menu__container__carte-prix {
-                position: relative;
-
-                p {
-                    position: absolute;
-                    right: 5px;
-                    top: -15px;
-                    font-weight: 700;
+            background: white;
+            border-radius: 15px;
+            height: 60px;
+            width: 100%;
+            overflow: hidden;
+            &:hover {
+                .card-menu__container__carte-prix {
+                    h2 {
+                        overflow: hidden;
+                    }
+                    p {
+                        overflow: hidden;
+                    }
+                }
+                & .card-menu__container__carte-prix {
+                    transform: translate(0px);
+                    & .fa-circle-check {
+                        color: white;
+                        transform: rotate(2turn);
+                    }
+                    & span {
+                        background-color: #99e2d0;
+                    }
                 }
             }
-
-            .card-menu__container__carte-text {
+        }   
+            & .card-menu__container__carte-text {
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
+                margin-right: auto;
+                overflow: hidden;
+                white-space: nowrap;
+                height: 100%;
+                padding: 0 0 0 15px;
                 gap: 5px;
 
                 h2 {
-                    font-size: 18px;
-                    font-weight: 600;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    font-size: 16px;
+                    font-weight: 700;
                 }
 
                 p {
-                    font-size: 13px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    font-size: 15px;
                     font-weight: 300;
-
+                }
+            }
+            &__carte-prix {
+                @include flex-center;
+                height: 100%;
+                font-weight: 700;
+                transform: translateX(45px);
+                transition: all 0.4s;
+                p {
+                    padding-top: 25px;
+                    margin-right: 10px;
+                }
+                span {
+                    display: block;
+                    @include flex-center;
+                    height: 100%;
+                    width: 60px;
+                    .fa-circle-check {
+                        color: transparent;
+                        transition: all 0.5s;
                 }
             }
         }
