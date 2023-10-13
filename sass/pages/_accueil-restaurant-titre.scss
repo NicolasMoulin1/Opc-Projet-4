@@ -1,171 +1,172 @@
 //****Réglage de la photo****//
 
 .acceuil-image-restaurant {
-    width: 100%;
-    height: 190px;
+  width: 100%;
+  height: 190px;
 
-    img {
-        width: 100%;
-        z-index: -1;
-        position: absolute;
-        object-fit: cover;
-    }
+  img {
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    object-fit: cover;
+  }
 }
 
 /*h1 + coeur*/
 
 .acceuil-restaurant-titre {
-    position: relative;
-    display: flex;
-    top: 0%;
-    right: 0%;
+  position: relative;
+  display: flex;
+  top: 0%;
+  right: 0%;
 
-    h1 {
-        font-size: 28px;
-        font-weight: 400;
-        padding-left: 15px;
-        padding-top: 20px;
-        font-family: shrikhand;
+  h1 {
+    font-size: 28px;
+    font-weight: 400;
+    padding: 20px 0px 10px 20px;
+    font-family: shrikhand;
+  }
+
+  i {
+    position: absolute;
+    top: 27px;
+    right: 25px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .fa-solid {
+    opacity: 0;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: all 0.4s ease-in-out;
+    background-image: $background-button;
+
+    &:hover {
+      opacity: 1;
     }
-
-    i {
-        position: absolute;
-        top: 27px;
-        right: 25px;
-        font-size: 24px;
-    }
-
-    .fa-solid {
-        opacity: 0;
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        transition: all 0.4s ease-in-out;
-        background-image: $background-button;
-
-        &:hover {
-            opacity: 1;
-        }
-    }
+  }
 }
 
 //****conteneur sur img restaurant****//
 
 .container-menu {
-    display: flex;
-    flex-direction: column;
-    background-color: $background-primary;
-    border-radius: 25px 25px 0px 0px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $background-primary;
+  border-radius: 25px 25px 0px 0px;
+  width: 100%;
 }
 
 //****Menu et titre + ligne****//
 .card-menu {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  background-color: $background-primary;
+  padding: 15px 15px 20px 15px;
+  gap: 10px;
+
+  h3 {
+    font-weight: 300;
+  }
+  .ligne {
+    color: $card-nouveau;
+    border-bottom: 3px solid;
+    width: 12%;
+  }
+
+  //****Partie menu & animation prix****//
+
+  .card-menu__container {
+    @include flex-center;
     flex-direction: column;
-    background-color: $background-primary;
-    padding: 15px;
-    gap: 10px;
-
-    h3 {
-        font-weight: 300;
-    }
-    .ligne{
-        color: $card-nouveau;
-        border-bottom: 3px solid;
-        width: 12%;
-    }
-//****Partie menu & animation prix****//
-
-    .card-menu__container {
-        @include flex-center;
-        flex-direction: column;
-        background: $background-primary;
-        gap: 15px;
-        .card-menu__container__carte {
-            @include flex-center;
-            @include box-shadow;
-            background: white;
-            border-radius: 15px;
-            height: 60px;
-            width: 100%;
+    background: $background-primary;
+    gap: 15px;
+    .card-menu__container__carte {
+      @include flex-center;
+      @include box-shadow;
+      background: white;
+      border-radius: 15px;
+      height: 60px;
+      width: 100%;
+      overflow: hidden;
+      cursor: pointer;
+      &:hover {
+        .card-menu__container__carte-prix {
+          h2 {
             overflow: hidden;
-            &:hover {
-                .card-menu__container__carte-prix {
-                    h2 {
-                        overflow: hidden;
-                    }
-                    p {
-                        overflow: hidden;
-                    }
-                }
-                & .card-menu__container__carte-prix {
-                    transform: translate(0px);
-                    & .fa-circle-check {
-                        color: white;
-                        transform: rotate(2turn);
-                    }
-                    & span {
-                        background-color: #99e2d0;
-                    }
-                }
-            }
-        }   
-            & .card-menu__container__carte-text {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                margin-right: auto;
-                overflow: hidden;
-                white-space: nowrap;
-                height: 100%;
-                padding: 0 0 0 15px;
-                gap: 5px;
-
-                h2 {
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    overflow: hidden;
-                    font-size: 16px;
-                    font-weight: 700;
-                }
-
-                p {
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    overflow: hidden;
-                    font-size: 15px;
-                    font-weight: 300;
-                }
-            }
-            &__carte-prix {
-                @include flex-center;
-                height: 100%;
-                font-weight: 700;
-                transform: translateX(45px);
-                transition: all 0.4s;
-                p {
-                    padding-top: 25px;
-                    margin-right: 10px;
-                }
-                span {
-                    display: block;
-                    @include flex-center;
-                    height: 100%;
-                    width: 60px;
-                    .fa-circle-check {
-                        color: transparent;
-                        transition: all 0.5s;
-                }
-            }
+          }
+          p {
+            overflow: hidden;
+          }
         }
+        & .card-menu__container__carte-prix {
+          transform: translate(0px);
+          & .fa-circle-check {
+            color: white;
+            transform: rotate(2turn);
+          }
+          & span {
+            background-color: #99e2d0;
+          }
+        }
+      }
     }
-}
+    & .card-menu__container__carte-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-right: auto;
+      overflow: hidden;
+      white-space: nowrap;
+      height: 100%;
+      padding: 0 0 0 15px;
+      gap: 5px;
 
+      h2 {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 16px;
+        font-weight: 700;
+      }
+
+      p {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 13px;
+        font-weight: 300;
+      }
+    }
+    &__carte-prix {
+      @include flex-center;
+      height: 100%;
+      font-weight: 700;
+      transform: translateX(45px);
+      transition: all 0.4s;
+      p {
+        padding-top: 25px;
+        margin-right: 10px;
+      }
+      span {
+        display: block;
+        @include flex-center;
+        height: 100%;
+        width: 60px;
+        .fa-circle-check {
+          color: transparent;
+          transition: all 0.5s;
+        }
+      }
+    }
+  }
+}
 //****Button****//
 
 .button-container {
-    @include flex-center;
-    width: 100%;
-    padding: 40px 0px 55px;
+  @include flex-center;
+  width: 100%;
+  padding: 40px 0px 55px;
 }

@@ -21,6 +21,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    cursor: pointer;
     img {
         display: flex;
         width: 100%;
@@ -37,6 +38,7 @@
         padding: 15px 0px 15px 0px;
         .restaurant__card__content__heart {
             position: relative;
+            cursor: pointer;
             i {
                 position: absolute;
                 right: 20px;
