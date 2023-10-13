@@ -19,8 +19,7 @@
         .button-CTA{
             @include flex-center;
             @include box-shadow_btn;
-            height: 50px;
-             width: 55%;
+            padding: 15px 20px;
             border-radius: 25px;
             background: $background-button;
             border: none;
