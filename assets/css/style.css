@@ -52,8 +52,8 @@ a {
 header {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   position: relative;
-  padding: 15px;
 }
 header .fa-arrow-left {
   position: absolute;
@@ -66,9 +66,9 @@ header .header__img-container {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 15px;
 }
 header .header__img-container img {
-  width: 100%;
   height: 40px;
 }
 header .header__location-container {
