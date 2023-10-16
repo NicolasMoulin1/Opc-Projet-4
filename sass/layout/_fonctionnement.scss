@@ -1,10 +1,42 @@
 //****Fonctionnement****//
 
+.fonctionnement {
+    padding: 20px;
+    margin-bottom: 40px;
+    background: white;
+    @media screen and (min-width: 768px) {
+        width: 88%;        
+    }
+    @media screen and (min-width: 1024px) {
+        width: 97%;        
+    }
+}
+
 .fonctionnement__container {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
+    @media screen and (min-width: 1024px) {
+        display: grid;
+        grid-template-columns: repeat(3, 29%); 
+        justify-content: center;
+        gap: 30px;
+        grid-template-areas: 
+        "title title title"
+        "card1 card2 card3";
+        .title {
+            grid-area: title;
+        }
+        .card1 {
+            grid-area: card1;
+        }
+        .card2 {
+            grid-area: card2;
+        }
+        .card3 {
+            grid-area: card3;
+        }
+    }
     span{
         font-weight: 500;
         position: absolute;
@@ -20,6 +52,7 @@
     }
         .nav__title {
             font-size: 24px;
+            padding: 20px 0px 20px 0px;
         }
             .article__fonctionnement {
                 @include box-shadow;
@@ -33,8 +66,17 @@
                 padding-left: 30px;
                 gap: 20px;
                 cursor: pointer;
-                i {
-                    color: #9356DC;
+                .fa-solid {
+                    font-weight: 900;
+                    &.fa-mobile-screen-button {
+                        color: #7e7e7e;
+                    }
+                    &.fa-list-ul {
+                        color: #7e7e7e;
+                    }
+                    &.fa-store {
+                        color: #9356DC;
+                    }
                 }
             }
         }

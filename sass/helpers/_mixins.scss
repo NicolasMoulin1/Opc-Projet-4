@@ -12,5 +12,5 @@
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
 }
 @mixin header_box-shadow {
-    box-shadow: inset 0px 2px 4px 0px #99e2d0;
+    box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
