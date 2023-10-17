@@ -6,6 +6,7 @@
   gap: 30px;
   background-color: $background-primary;
   padding-bottom: 50px;
+  width: 100%;
   .reservation__info-text {
     @include flex-center;
     flex-direction: column;
