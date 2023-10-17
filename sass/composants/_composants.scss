@@ -1,35 +1,33 @@
-
 //****Composants****//
 
 .restaurants__card__nouveau {
-    @include flex-center;
-    background-color: $card-nouveau;
-    width: 80px;
-    height: 30px;
-    border-radius: 5px;
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    p {
-        color: #008766;
-        font-weight: 600;
-    }
+  @include flex-center;
+  background-color: $card-nouveau;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  p {
+    color: #008766;
+    font-weight: 600;
+  }
 }
+.button-CTA {
+  @include flex-center;
+  @include box-shadow_btn;
+  padding: 15px 40px;
+  border-radius: 25px;
+  background: $background-button;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
 
-        .button-CTA{
-            @include flex-center;
-            @include box-shadow_btn;
-            padding: 15px 20px;
-            border-radius: 25px;
-            background: $background-button;
-            border: none;
-            color: white;                
-            font-size: 16px;
-            font-weight: 700;
-            
-            &:hover {
-                cursor: pointer;
-                transform: scale(1.01);
-                opacity: 0.9;
-    }
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    opacity: 0.9;
+  }
 }

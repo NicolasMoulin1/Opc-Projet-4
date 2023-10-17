@@ -1,56 +1,63 @@
-
 //****Animation du Loader****//
 
 .container__loader {
-    background-color:#eaeaea93;
-    height: 100%;
-    width: 100%;
-    line-height: 100%;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 999;
-    animation: fin-loader 2s linear forwards;
-    .loader {
-        height: 100px;
-        width: 100px;
-        border-radius: 100px;
-        border: 10px solid rgba(255,255,255,0.4);
-        border-bottom: 10px solid #008766;
-        border-top: 10px solid #008766;
-        border-left: 10px solid #008766;
-        animation: spin 1s linear infinite;
-        @keyframes spin{
-            0%{transform: rotate(0deg);}
-            100%{transform: rotate(360deg);}
-        }
-        @keyframes fin-loader {
-            0%{opacity: 1;}
-            100%{opacity: 0.5;display: none;}
-        }
+  background-color: #eaeaea93;
+  height: 100%;
+  width: 100%;
+  line-height: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  animation: fin-loader 2s linear forwards;
+  .loader {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    border: 10px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 10px solid #008766;
+    border-top: 10px solid #008766;
+    border-left: 10px solid #008766;
+    animation: spin 1s linear infinite;
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
     }
+    @keyframes fin-loader {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0.5;
+        display: none;
+      }
+    }
+  }
 }
 
 //****Animation des card****//
 
 @keyframes anim-card {
-    0% {
-      transform: translateX(-500px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0px);
-      opacity: 1;
-    }
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
   }
-  .entrees {
-    animation: anim-card 0.4s ;
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
   }
-  .plats {
-    animation: anim-card 0.8s ;
-  }
-  .desserts {
-    animation: anim-card 1.2s;
-  }
-
+}
+.entrees {
+  animation: anim-card 0.4s;
+}
+.plats {
+  animation: anim-card 0.8s;
+}
+.desserts {
+  animation: anim-card 1.2s;
+}

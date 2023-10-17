@@ -1,11 +1,12 @@
 @import"helpers/variables";
-@import"helpers/reset";
 @import"helpers/mixins";
+@import"helpers/fonts";
+@import"helpers/reset";
 @import"composants/composants";
+@import"composants/animation";
 @import"layout/header";
 @import"layout/reservation";
 @import"layout/fonctionnement";
 @import"layout/restaurants";
 @import"layout/footer";
 @import"pages/accueil-restaurant-titre";
-@import"composants/animation";
