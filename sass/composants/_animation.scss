@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   z-index: 999;
-  animation: fin-loader 2s linear forwards;
+  animation: fadeOut 2s linear forwards;
   .loader {
     height: 100px;
     width: 100px;
@@ -28,12 +28,12 @@
         transform: rotate(360deg);
       }
     }
-    @keyframes fin-loader {
+    @keyframes fadeOut {
       0% {
         opacity: 1;
       }
       100% {
-        opacity: 0.5;
+        opacity: 0;
         display: none;
       }
     }
