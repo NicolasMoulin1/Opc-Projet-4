@@ -72,20 +72,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 999;
   animation: fadeOut 2s linear forwards;
+  z-index: 999;
 }
 .container__loader .loader {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   border-radius: 100px;
-  border: 10px solid rgba(255, 255, 255, 0.4);
-  border-bottom: 10px solid #008766;
-  border-top: 10px solid #008766;
-  border-left: 10px solid #008766;
-  animation: spin 1s linear infinite;
+  border: solid 10px #9356dc;
+  border-right: solid 10px transparent;
+  animation: rotate-loader 1s linear infinite;
+  opacity: 0.8;
 }
-@keyframes spin {
+@keyframes rotate-loader {
   0% {
     transform: rotate(0deg);
   }
@@ -99,7 +98,7 @@ body {
   }
   100% {
     opacity: 0;
-    display: none;
+    z-index: -2;
   }
 }
 
@@ -434,7 +433,7 @@ footer .article-footer .fa-utensils {
 .acceuil-image-restaurant img {
   width: 100%;
   height: 240px;
-  z-index: -1;
+  z-index: -2;
   position: absolute;
   object-fit: cover;
 }
