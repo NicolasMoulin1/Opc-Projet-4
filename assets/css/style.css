@@ -353,8 +353,6 @@ header .header__location-container {
 .restaurant__card .card-content .restaurant__card__content__heart .fa-solid:hover {
   opacity: 1;
   color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
   transition: all 0.5s ease-in-out;
   background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
 }
@@ -480,8 +478,6 @@ footer .article-footer .fa-utensils {
 .acceuil-restaurant-titre .fa-solid {
   opacity: 0;
   color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
   transition: all 0.4s ease-in-out;
   background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
 }
