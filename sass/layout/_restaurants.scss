@@ -58,9 +58,19 @@
     background-color: white;
     gap: 5px;
     padding: 15px 0px 15px 0px;
-
-//****Animation du Coeur sur la page d'acceuil****//
-
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      padding-left: 15px;
+    }
+    p {
+      font-size: 17px;
+      font-weight: 300;
+      padding-left: 15px;
+    }
+    
+    //****Animation du Coeur sur la page d'acceuil****//
+    
     .restaurant__card__content__heart {
       position: relative;
       cursor: pointer;
@@ -81,16 +91,6 @@
           background-image: $background-button;
         }
       }
-    }
-    h2 {
-      font-size: 18px;
-      font-weight: 700;
-      padding-left: 15px;
-    }
-    p {
-      font-size: 17px;
-      font-weight: 300;
-      padding-left: 15px;
     }
   }
 }
